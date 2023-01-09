@@ -1,2 +1,2 @@
-# dhango_projects
+# django_projects
 Mini projects using Django and DRF.
