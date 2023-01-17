@@ -19,5 +19,5 @@ from cocktailDRF import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('', include('cocktailDRF.urls'))
+    path('drf', include('cocktailDRF.urls'))
 ]
