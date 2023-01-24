@@ -19,7 +19,8 @@ from cocktail_book import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('api/', include('cocktailDRF.urls')),
+    path('api/', include('cocktail_bookAPI.urls')),
+    path('', include('cocktail_book.urls')),
     path('auth/', include('djoser.urls')),
     path('auth/', include('djoser.urls.authtoken')),
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
