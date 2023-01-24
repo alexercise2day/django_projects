@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class CocktaildrfConfig(AppConfig):
+class CocktailBookapiConfig(AppConfig):
     default_auto_field = "django.db.models.BigAutoField"
-    name = "cocktailDRF"
+    name = "cocktail_bookAPI"
