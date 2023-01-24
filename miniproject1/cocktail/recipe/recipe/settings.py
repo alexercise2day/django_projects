@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "cocktail_book",
+    "cocktail_bookAPI",
     "django_bootstrap5",
     "rest_framework",
     "rest_framework.authtoken",
