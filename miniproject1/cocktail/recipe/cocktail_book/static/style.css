@@ -1,3 +1,12 @@
-li a {
-    color: green;
+body {
+    background-color: blueviolet;
+}
+
+p {
+    color: whitesmoke;
+}
+
+nav {
+    background-color: aqua;
+    color: black;
 }

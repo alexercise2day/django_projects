@@ -66,7 +66,7 @@ REST_FRAMEWORK = {
 DJOSER = {
     "USER_ID_FIELD" : "username",
     'SERIALIZERS': {
-        'user_create': 'LittleLemonAPI.serializers.UserSerializer',
+        'user_create': 'cocktail_bookAPI.serializers.UserSerializer',
     }
 }
 
@@ -85,7 +85,7 @@ ROOT_URLCONF = "recipe.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": ['cocktail/recipe/cocktailDRF/templates'],
+        "DIRS": ['cocktail/recipe/cocktail_book/templates'],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
