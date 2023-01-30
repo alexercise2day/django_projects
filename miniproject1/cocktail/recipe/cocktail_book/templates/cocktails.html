@@ -1,7 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
+{% block styles %}
+    {{ block.super }}
+{% endblock %}
+<head>
+    <title>{% block title %}Cocktails{% endblock %} </title>
+</head>
 <div class="container text-center" style="color: white">
-    <title>Cocktails</title>
     <link rel="stylesheet" href="style.css">
         <p>"hello. This is my cocktail cook book"</p>
 </div>

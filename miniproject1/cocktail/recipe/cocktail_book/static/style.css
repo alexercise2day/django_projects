@@ -1,12 +1,12 @@
-body {
+.body {
     background-color: blueviolet;
 }
 
-p {
+.p {
     color: whitesmoke;
 }
 
-nav {
+.nav {
     background-color: aqua;
     color: black;
 }
