@@ -4,6 +4,12 @@
 </head>
 <body>
     {% block content %}
-    
+    <table>
+        {% for v in vodka %}
+            <tr>
+                <td>{{v.name}}</td>
+            </tr>
+        {% endfor %}
     {% endblock %}
+    </table>
 </body>

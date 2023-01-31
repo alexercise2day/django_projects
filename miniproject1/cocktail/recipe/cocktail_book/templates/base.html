@@ -1,4 +1,3 @@
-{% load django_bootstrap5 %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -6,34 +5,31 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> 
-{% block title %} 
-    Cocktail Cook Book 
-{% endblock %} 
-</title>
-{% block styles %}
-{% bootstrap_css %}
 <link rel="stylesheet" type="text/css" href="{% static 'cocktail_book/style.css' %}">
-{% endblock %}
 </head>
 <body>
-    <h1>
-        <p> Welcome to my personal collection of cocktails!</p>
-        <p> This website is not only dedicated to showcasing the recipes that I have grown to enjoy over the years, but also I wanted to share my recommendations for drinks that anyone can enjoy based on their preferences, the weather, the meal, etc. </p>
-        <p> Enjoy! </p>
-    </h1>
+    <title> 
+        {% block title %} 
+            Cocktail Cook Book 
+        {% endblock %} 
+    </title>
+        <p> 
+            Welcome to my personal collection of cocktails! <br>This website is not only dedicated to showcasing the recipes that I have grown to enjoy over the years, but also I wanted to share my recommendations for drinks that anyone can enjoy based on their preferences, the weather, the meal, etc.</br>
+            <br>Enjoy!</br>
+        </p>
     {% block content %}
     <div id="content">
     <nav>
         <ul>
-            <li><a href="cocktails.html">Cocktails</a></li>
             <li><a href="about.html">About</a></li>
+            <li><a href="cocktail_rec.html">Cocktail of the Day</a></li>
         </ul>
     </nav>
     </div>
     {% endblock %}
-    <!-- Bootstrap links -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"> </script>
    
 </body>
+<footer>
+        <p>Creator: Alex Lim <br>Email: amlim0930@yahoo.com</br></p>
+</footer>
 </html>

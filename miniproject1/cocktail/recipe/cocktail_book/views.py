@@ -6,11 +6,8 @@ from rest_framework.response import Response
 def base(request):
     return render(request, 'base.html')
 
-def cocktails(request):
-    return render(request, 'cocktails.html')
-
 def vodka(request):
-    return render(request, 'vodka.html')
-
+    vodka_list = Vodka.objects.all().order_by('name')
+    return render(request, 'vodka.html', {'vodka_list': vodka_list})
 
 

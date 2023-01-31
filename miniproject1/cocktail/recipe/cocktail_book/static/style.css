@@ -1,12 +1,41 @@
-.body {
-    background-color: blueviolet;
+header {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    align-items: center;
 }
 
-.p {
-    color: whitesmoke;
+
+body {
+    background-color: rgb(240, 119, 232);
+    font-family: sans-serif;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
-.nav {
-    background-color: aqua;
-    color: black;
+title{
+    color: rgb(0,0,0);
+    font-size: 2em;
+}
+
+h1, p {
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+}
+
+nav {
+    background-color: rgb(181, 178, 179);
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding-right: 1em;
 }
