@@ -3,13 +3,16 @@
     <title> Vodka-Based Cocktails </title>
 </head>
 <body>
+    <main>
+        Check out my wonderful selection below!
+    </main>
     {% block content %}
-    <table>
+    <ol>
         {% for v in vodka %}
-            <tr>
-                <td>{{v.name}}</td>
-            </tr>
+            <li>
+                <a href="{% url 'vodka:vodka_display' pk=v.pk %}">{{v.name}}</a>
+            </li>
         {% endfor %}
     {% endblock %}
-    </table>
+    </ol>
 </body>
