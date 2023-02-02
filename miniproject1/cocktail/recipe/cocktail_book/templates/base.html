@@ -3,19 +3,15 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE edge">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="{% static '/style.css' %}">
+<link rel="stylesheet" href="{% static "cook/style.css" %}">
+ <title>Cocktail Cookbook</title>
 </head>
 <body>
-    <title> 
-        {% block title %} 
-            Cocktail Cook Book 
-        {% endblock %} 
-    </title>
+    <h1>Cocktail Cookbook</h1>
         <p> 
-            Welcome to my personal collection of cocktails! <br>This website is not only dedicated to showcasing the recipes that I have grown to enjoy over the years, but also I wanted to share my recommendations for drinks that anyone can enjoy based on their preferences, the weather, the meal, etc.</br>
-            <br>Enjoy!</br>
+            Welcome to my personal collection of cocktails! <br>This website is not only dedicated to showcasing the recipes that I have grown to enjoy over the years, but also I wanted to share my recommendations for drinks that anyone can enjoy based on their preferences, the weather, the meal, etc.<br>Enjoy!
         </p>
     {% block content %}
     <div id="content">
@@ -23,14 +19,13 @@
         <ul>
             <li><a href="about.html">About</a></li>
             <li><a href="cocktail_rec.html">Cocktail of the Day</a></li>
-            <li><a href="vodka.html"><Vodka</a></li>
+            <li><a href="vodka.html">Vodka</a></li>
         </ul>
     </nav>
     </div>
     {% endblock %}
-   
-</body>
 <footer>
-        <p>Creator: Alex Lim <br>Email: amlim0930@yahoo.com</br></p>
+    <p>Creator: Alex Lim <br>Email: amlim0930@yahoo.com</p>
 </footer>
+</body>
 </html>
