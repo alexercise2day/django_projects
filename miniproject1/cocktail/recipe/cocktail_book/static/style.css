@@ -1,0 +1,9 @@
+body {
+    background-color: purple;
+}
+
+h1, p {
+    font-family: sans-serif;
+    font-size: small;
+    font-weight: 200;;
+}

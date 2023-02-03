@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
-<head>
-    <title>{{v.name}}</title>
-</head>
-<body>
+{% load static %}
+{% block content %}
+<section>
+    <article>{{v.name}}</article>
     <p>{{v.price}}</p>
     <p>{{v.ingredients}}</p>
     <p>{{v.instructions}}</p>
-</body>
+</section>
+{% block content %}

@@ -1,18 +1,16 @@
 {% extends 'base.html' %}
-<head>
-    <title> Vodka-Based Cocktails </title>
-</head>
-<body>
+{% load static %}
+{% block content %}
+<section>
     <main>
         Check out my wonderful selection below!
     </main>
-    {% block content %}
     <ol>
         {% for v in vodka %}
             <li>
                 <a href="{% url 'vodka:vodka_display' pk=v.pk %}">{{v.name}}</a>
             </li>
         {% endfor %}
-    {% endblock %}
     </ol>
-</body>
+</section>
+{% endblock %}
