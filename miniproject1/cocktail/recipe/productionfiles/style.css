@@ -1,37 +1,38 @@
 body {
-    background-color: #abdbe3;
+    background-color:cyan;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
 }
 
 h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: small;
-    font-weight: 200;;
+    font-size: x-large;
+    font-weight: 200;
+    color:#EE23EE; 
+    
 }
 
 p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
     margin-top: 60px;
+    color:#EE23EE;
 }
 
 nav {
-    position: relative;
+    position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
-    background-color: #EE23EE;
+    background-color:seashell;
     display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    text-align: center;
-    height: 40px;
+    flex-direction: row;
+    width: 100%;
 }
 
 nav a {
-    color: #fff;
+    color:#EE23EE;
     text-decoration: none;
     margin-right: 10px;
-    display: inline-block;
+    display: block;
+    padding: 0;
 }
 

@@ -6,7 +6,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('cocktail_book/', views.base, name='cocktail_book'),
-    path('vodka/', views.vodka, name='vodka'),
+    path('vodka/', views.vodka_all, name='vodka_all'),
     path('<int:pk>/', views.vodka_display, name='vodka_display'),
 ]
 if settings.DEBUG:

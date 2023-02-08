@@ -6,9 +6,9 @@
         Check out my wonderful selection below!
     </main>
     <ol>
-        {% for v in vodka %}
+        {% for v in vodka_list %}
             <li>
-                <a href="{% url 'vodka:vodka_display' pk=v.pk %}">{{v.name}}</a>
+                <a href="{% url 'vodka_display' v.id %}">{{v.name}}</a>
             </li>
         {% endfor %}
     </ol>
