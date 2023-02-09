@@ -2,9 +2,12 @@
 {% load static %}
 {% block content %}
 <section>
-    <article>{{v.name}}</article>
-    <p>{{v.price}}</p>
-    <p>{{v.ingredients}}</p>
-    <p>{{v.instructions}}</p>
+    <h1>{{vodka_entry.name}}</h1>
+    <h2>Ingredients</h2>
+        <p>{{ vodka_entry.ingredients }}</p>
+    <h3>Instructions</h3>
+        <p>{{ vodka_entry.instructions }}</p>
+    <h4>Notes</h4>
+        <p>{{vodka_entry.notes}}</p>
 </section>
 {% endblock %}

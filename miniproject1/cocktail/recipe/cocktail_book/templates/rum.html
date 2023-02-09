@@ -2,8 +2,13 @@
 {% load static %}
 {% block content %}
 <section>
-    <article>
         <h1>Rum Cocktails</h1>
-        
-    </article>
+        <ul>
+            {% for r in rum_list %}
+                <li>
+                    <a href="{% url 'rum_display' r.id %}">{{r.name}}</a>
+                </li>
+            {% endfor %}    
+        </ul>    
 </section>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section>
+    <h1>{{rum_entry.name}}</h1>
+    <h2>Ingredients</h2>
+        <p>{{ rum_entry.ingredients }}</p>
+    <h3>Instructions</h3>
+        <p>{{ rum_entry.instructions }}</p>
+    <h4>Notes</h4>
+        <p>{{ rum_entry.notes}}</p>
+</section>
+{% endblock %}

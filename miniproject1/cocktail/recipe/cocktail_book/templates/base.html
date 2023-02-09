@@ -9,25 +9,26 @@
  <title>Cocktail Cookbook</title>
 </head>
 <body>
+    {% block content %}
     <h1>Cocktail Cookbook</h1>
         <p> 
             Welcome to my personal collection of cocktails! <br>This website is not only dedicated to showcasing the recipes that I have grown to enjoy over the years, but also I wanted to share my recommendations for drinks that anyone can enjoy based on their preferences, the weather, the meal, etc.<br>Enjoy!
         </p>
-    {% block content %}
+    {% endblock %}
     <div id="content">
     <nav>
         <ul>
-            <li><a href="about.html">About</a></li>
+            <li><a href="{% url 'cocktail_book' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
             <li><a href="cocktail_rec.html">Cocktail of the Day</a></li>
-            <li><a href="vodka.html">Vodka</a></li>
-            <li><a href="rum.html">Rum</a></li>
-            <li><a href="tequila.html">Tequila</a></li>
-            <li><a href='gin.html'>Gin</a></li>
-            <li><a href="whiskey.html">Whiskey</a></li>
+            <li><a href="{% url 'vodka_all' %}">Vodka</a></li>
+            <li><a href="{% url 'rum_all' %}">Rum</a></li>
+            <li><a href="{% url 'tequila_all' %}">Tequila</a></li>
+            <li><a href="{% url 'gin_all' %}">Gin</a></li>
+            <li><a href="{% url 'whiskey_all' %}">Whiskey</a></li>
         </ul>
     </nav>
     </div>
-    {% endblock %}
 <footer>
     <p>Creator: Alex Lim <br>Email: amlim0930@yahoo.com</p>
 </footer>

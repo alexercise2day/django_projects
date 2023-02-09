@@ -2,15 +2,16 @@
 {% load static %}
 {% block content %}
 <section>
+    <h1>Vodka Cocktails </h1>
     <main>
         Check out my wonderful selection below!
     </main>
-    <ol>
+    <ul>
         {% for v in vodka_list %}
             <li>
                 <a href="{% url 'vodka_display' v.id %}">{{v.name}}</a>
             </li>
         {% endfor %}
-    </ol>
+    </ul>
 </section>
 {% endblock %}

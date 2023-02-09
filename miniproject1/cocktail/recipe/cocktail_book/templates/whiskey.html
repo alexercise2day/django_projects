@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section>
+        <h1>Whiskey Cocktails</h1>
+        <ul>
+            {% for w in whiskey_list %}
+                <li>
+                    <a href="{% url 'whiskey_display' w.id %}">{{w.name}}</a>
+                </li>
+            {% endfor %}    
+        </ul>    
+</section>
+{% endblock %}
