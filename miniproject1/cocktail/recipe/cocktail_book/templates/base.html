@@ -7,28 +7,38 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="{% static 'style.css' %}">
  <title>Cocktail Cookbook</title>
+ <nav class="navbar">
+    <a class="navbar-brand" href="{% url 'cocktail_book' %}">Home</a>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class='nav-link' href = "{% url 'vodka_all' %}">Vodka</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'rum_all' %}">Rum</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'gin_all' %}">Gin</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'tequila_all' %}">Tequila</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'whiskey_all' %}"> Whiskey</a>
+        </li>
+    </ul>
+ </nav>
 </head>
 <body>
     {% block content %}
-    <h1>Cocktail Cookbook</h1>
-        <p> 
-            Welcome to my personal collection of cocktails! <br>This website is not only dedicated to showcasing the recipes that I have grown to enjoy over the years, but also I wanted to share my recommendations for drinks that anyone can enjoy based on their preferences, the weather, the meal, etc.<br>Enjoy!
+    <h1 class="homepage">Cocktail Cookbook</h1>
+    <h2 class="intro">Welcome!</h2>
+        <p class="intro-paragraph"> 
+            This is my personal collection of cocktails, all tried and true! <br>
+            This website is not only dedicated to showcasing the recipes that I have grown to enjoy over the years, but also I wanted to share my recommendations for drinks that anyone can enjoy based on their preferences, the weather, the meal, etc.<br>
+            I prefer my drinks on the sweeter side, but you are more than welcome to adjust the recipes for your own tastes! <br>
+            Enjoy!
         </p>
     {% endblock %}
-    <div id="content">
-    <nav>
-        <ul>
-            <li><a href="{% url 'cocktail_book' %}">Home</a></li>
-            <li><a href="{% url 'about' %}">About</a></li>
-            <li><a href="cocktail_rec.html">Cocktail of the Day</a></li>
-            <li><a href="{% url 'vodka_all' %}">Vodka</a></li>
-            <li><a href="{% url 'rum_all' %}">Rum</a></li>
-            <li><a href="{% url 'tequila_all' %}">Tequila</a></li>
-            <li><a href="{% url 'gin_all' %}">Gin</a></li>
-            <li><a href="{% url 'whiskey_all' %}">Whiskey</a></li>
-        </ul>
-    </nav>
-    </div>
 <footer>
     <p>Creator: Alex Lim <br>Email: amlim0930@yahoo.com</p>
 </footer>

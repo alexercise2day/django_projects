@@ -1,64 +1,91 @@
+
+/* constant navigation menu on top of page */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+/* constant background settings */
 body {
     background-color:cyan;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
 }
-
+/* Constant headings for each webpage, including homepage */
 h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: x-large;
-    font-weight: 200;
+    font-size: 36px;
+    font-weight:bold;
     color:#EE23EE;
     text-align: center; 
     
 }
-
-h2, h3, h4 {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: medium;
-    font-weight: 200;
-    color: #EE23EE;
-    text-align:left
-}
-
-p {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: small;
-    margin-top: 60px;
-    color:#EE23EE;
-}
-
-nav {
-    position: relative;
-    top: 0;
-    display: flex;
-    flex-direction: row;
-}
-
-nav a {
-    color:#EE23EE;
-    text-decoration: none;
-    display: table-row;
-    padding: 0;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    margin-right: 1rem;
-    margin-left: 2rem;
-}
-
+/* constant footer settings */
 footer {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     height: 50px;
+}
+footer p {
+    color:#EE23EE;
+    text-align: center;
+    font-size: 9px;
+}
+/* homepage specifics */
+.homepage {
+    font-size: 48px;
+}
+.intro {
+    font-size: 36px;
+    text-align: center;
+}
+
+.introparagraph {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 20px;
+    color:#EE23EE;
+}
+/* headers for the drink display */
+h2, h3, h4 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #EE23EE;
+    text-align:left
+}
+/* text within headers for drink displays */
+h2 p {
+    text-align: left;
+    font-size: 12px;
+    white-space: pre;
+}
+
+h3 p {
+    text-align: left;
+    font-size: 12px;
+    white-space: pre;
+}
+
+h4 p {
+    text-align: left;
+    font-size: 12px;
+    white-space: pre;
+}
+/* general image settings */
+h1 img {
+    max-width: 25%;
 }

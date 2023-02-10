@@ -3,11 +3,12 @@
 {% block content %}
 <section>
     <h1>{{gin_entry.name}}</h1>
+    <img src="cocktail_book/img/gt_small.png">
     <h2>Ingredients</h2>
-        <p>{{ gin_entry.ingredients }}</p>
+        <p>{{ gin_entry.ingredients|linebreaks }}</p>
     <h3>Instructions</h3>
-        <p>{{ gin_entry.instructions }}</p>
+        <p>{{ gin_entry.instructions|linebreaks }}</p>
     <h4>Notes</h4>
-        <p>{{ gin_entry.notes}}</p>
+        <p>{{ gin_entry.notes|linebreaks }}</p>
 </section>
 {% endblock %}
