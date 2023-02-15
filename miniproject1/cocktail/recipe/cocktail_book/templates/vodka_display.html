@@ -3,7 +3,7 @@
 {% block content %}
 <section>
     <h1>{{vodka_entry.name}}</h1>
-    <img src="{% static 'media/img/WhiteGummyBearMartiniThumb_Small_Small.png' %}">
+    <img src="{{ vodka_entry.image.url }}" alt="{{ vodka_entry.name }} image">
     <h2>Ingredients</h2>
         <p>{{vodka_entry.ingredients|linebreaks }}</p>
     <h3>Instructions</h3>
