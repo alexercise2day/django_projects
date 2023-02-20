@@ -18,12 +18,14 @@
 /* constant background settings */
 body {
     background-color:cyan;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Zapf Chancery, cursive;
+    border: 2px solid black;
+    padding: 10px;
     
 }
 /* Constant headings for each webpage, including homepage */
 h1 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: florence, cursive;
     font-size: 36px;
     font-weight:bold;
     color:#EE23EE;
@@ -53,7 +55,7 @@ footer p {
 }
 
 .introparagraph {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: coronetscript, cursive;
     font-size: 13px;
     text-align: center;
     margin-top: 20px;
@@ -61,7 +63,7 @@ footer p {
 }
 /* headers for the drink display */
 h2, h3, h4 {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: parkavenue, cursive;
     font-size: 20px;
     font-weight: bold;
     color: #EE23EE;
