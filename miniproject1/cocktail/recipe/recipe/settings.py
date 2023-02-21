@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "cocktail_book",
     "cocktail_bookAPI",
-    "django_bootstrap5",
     "rest_framework",
     "rest_framework.authtoken",
     "rest_framework_simplejwt",
@@ -162,4 +161,4 @@ mimetypes.add_type("text/css", ".css", True)
 # Media files
 MEDIA_URL = 'django_projects/miniproject1/cocktail/recipe/cocktail_book/media/'
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_ROOT = BASE_DIR / 'miniproject1'
+MEDIA_ROOT = BASE_DIR / 'cocktail_book'

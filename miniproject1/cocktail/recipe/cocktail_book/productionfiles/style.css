@@ -62,7 +62,7 @@ footer p {
     color:#EE23EE;
 }
 /* headers for the drink display */
-h2, h3, h4 {
+h2, h3, h4, h5 {
     font-family: parkavenue, cursive;
     font-size: 20px;
     font-weight: bold;
@@ -88,8 +88,13 @@ h4 p {
     white-space: pre;
 }
 /* general image settings */
-h1 img {
-    max-width: 50%;
+.container {
+    overflow: hidden;
+}
+
+img {
+    float: right;
+    width: 50%;
 }
 
 /* display-all settings */

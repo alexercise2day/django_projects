@@ -18,5 +18,3 @@ urlpatterns = [
     path('whiskey/', views.whiskey_all, name="whiskey_all"),
     path('whiskey/whiskey_display/<int:id>', views.whiskey_display, name="whiskey_display"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-if settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)
