@@ -15,7 +15,7 @@ class Rum(models.Model):
     ingredients = models.TextField(max_length='1000', default='')
     instructions = models.TextField(max_length='1000', default='')
     notes = models.TextField(max_length='1000', default='')
-    image = models.ImageField(upload_to='img/', default='')
+    image = models.ImageField(upload_to='media/img/', default='')
     background = models.TextField(max_length='2000', default='')
 
 class Gin(models.Model):
@@ -23,7 +23,7 @@ class Gin(models.Model):
     ingredients = models.TextField(max_length='1000', default='')
     instructions = models.TextField(max_length='1000', default='')
     notes = models.TextField(max_length='1000', default='')
-    image = models.ImageField(upload_to='img/', default='')
+    image = models.ImageField(upload_to='media/img/', default='')
     background = models.TextField(max_length='2000', default='')
 
 class Tequila(models.Model):
@@ -31,7 +31,7 @@ class Tequila(models.Model):
     ingredients = models.TextField(max_length='1000', default='')
     instructions = models.TextField(max_length='1000', default='')
     notes = models.TextField(max_length='1000', default='')
-    image = models.ImageField(upload_to='img/', default='')
+    image = models.ImageField(upload_to='media/img/', default='')
     background = models.TextField(max_length='2000', default='')
     
 class Whiskey(models.Model):
@@ -39,5 +39,5 @@ class Whiskey(models.Model):
     ingredients = models.TextField(max_length='1000', default='')
     instructions = models.TextField(max_length='1000', default='')
     notes = models.TextField(max_length='1000', default='')
-    image = models.ImageField(upload_to='img/', default='')
+    image = models.ImageField(upload_to='media/img/', default='')
     background = models.TextField(max_length='2000', default='')

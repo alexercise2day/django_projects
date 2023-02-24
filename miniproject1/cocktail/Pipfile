@@ -9,7 +9,11 @@ djangorestframework = "*"
 djangorestframework-xml = "*"
 djoser = "*"
 djangorestframework-simplejwt = "~=5.2.1"
+<<<<<<< HEAD
 whitenoise = "*"
+=======
+pillow = "*"
+>>>>>>> origin/main
 
 [dev-packages]
 

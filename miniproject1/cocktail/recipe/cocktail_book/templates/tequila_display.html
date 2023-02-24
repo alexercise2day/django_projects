@@ -3,11 +3,14 @@
 {% block content %}
 <section>
     <h1>{{tequila_entry.name}}</h1>
+    <img src="{{tequila_entry.image.url }}" alt="{{tequila_entry.name}} image">
     <h2>Ingredients</h2>
         <p>{{ tequila_entry.ingredients|linebreaks }}</p>
     <h3>Instructions</h3>
         <p>{{ tequila_entry.instructions|linebreaks }}</p>
     <h4>Notes</h4>
         <p>{{ tequila_entry.notes|linebreaks }}</p>
+    <h5>Background</h5>
+        <p>{{ tequila_entry.background|linebreaks }}</p>
 </section>
 {% endblock %}
