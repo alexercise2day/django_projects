@@ -4,7 +4,9 @@
 <section>
     <h1>{{vodka_entry.name}}</h1>
     <div class="container">
-        <img src="{{ vodka_entry.image.url }}" alt="{{ vodka_entry.name }} image">
+        {% if vodka_entry.image %}
+            <img src="{{ vodka_entry.image.url }}" alt="Image">
+        {% endif %}
     </div>
     <h2>Ingredients</h2>
         <p>{{vodka_entry.ingredients|linebreaks }}</p>

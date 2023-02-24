@@ -2,7 +2,14 @@
 /* constant navigation menu on top of page */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    background-color: #d726e0;
+    border: solid #a111a8;
+    padding: 10px;
+}
+
+head {
+    text-align: center;
 }
 
 .navbar-nav {
@@ -17,18 +24,24 @@
 }
 /* constant background settings */
 body {
-    background-color:cyan;
+    background-color: #b49cb5;
     font-family: Zapf Chancery, cursive;
-    border: 2px solid black;
+}
+.box {
+    border: solid black;
     padding: 10px;
-    
+}
+ul {
+    border: solid black;
+    padding: 10px;
+    list-style-type: none;
 }
 /* Constant headings for each webpage, including homepage */
 h1 {
     font-family: florence, cursive;
     font-size: 36px;
     font-weight:bold;
-    color:#EE23EE;
+    color:black;
     text-align: center; 
     
 }
@@ -41,7 +54,7 @@ footer {
     height: 50px;
 }
 footer p {
-    color:#EE23EE;
+    color: black;
     text-align: center;
     font-size: 9px;
 }
@@ -59,14 +72,14 @@ footer p {
     font-size: 13px;
     text-align: center;
     margin-top: 20px;
-    color:#EE23EE;
+    color:black;
 }
 /* headers for the drink display */
 h2, h3, h4, h5 {
     font-family: parkavenue, cursive;
     font-size: 20px;
     font-weight: bold;
-    color: #EE23EE;
+    color: black;
     text-align:left
 }
 /* text within headers for drink displays */

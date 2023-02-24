@@ -7,7 +7,7 @@ class Vodka(models.Model):
     ingredients = models.TextField()
     instructions = models.TextField()
     notes = models.TextField()
-    image = models.ImageField(upload_to='img/', default='')
+    image = models.ImageField(upload_to='media/img/', default='')
     background = models.TextField(max_length='2000', default='')
 
 class Rum(models.Model):

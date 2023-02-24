@@ -27,7 +27,7 @@ def vodka_display(request, id):
         'vodka_entry': vodka_entry,
     }
     return HttpResponse(template.render(context, request))
-    # return render(request, 'vodka_list/vodka_display.html', {'vodka_entry': vodka_entry})
+    
 
 def rum_all(request):
     rum_list = Rum.objects.all().values()

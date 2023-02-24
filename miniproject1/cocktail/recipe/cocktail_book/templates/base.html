@@ -8,8 +8,10 @@
 <link rel="stylesheet" href="{% static 'style.css' %}">
  <title>Cocktail Cookbook</title>
  <nav class="navbar">
-    <a class="navbar-brand" href="{% url 'cocktail_book' %}">Home</a>
     <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'cocktail_book' %}">Home</a>
+        </li>
         <li class="nav-item">
             <a class='nav-link' href = "{% url 'vodka_all' %}">Vodka</a>
         </li>
@@ -31,13 +33,15 @@
 <body>
     {% block content %}
     <h1 class="homepage">Cocktail Cookbook</h1>
-    <h2 class="intro">Welcome!</h2>
-        <p class="intro-paragraph"> 
+    <div class="box">
+        <h2 class="intro">Welcome!</h2>
+            <p class="intro-paragraph"> 
             This is my personal collection of cocktails, all tried and true! <br>
             This website is not only dedicated to showcasing the recipes that I have grown to enjoy over the years, but also I wanted to share my recommendations for drinks that anyone can enjoy based on their preferences, the weather, the meal, etc.<br>
             I prefer my drinks on the sweeter side, but you are more than welcome to adjust the recipes for your own tastes! <br>
             Enjoy!
-        </p>
+            </p>
+    </div>
     {% endblock %}
 </body>
 <footer>
