@@ -2,7 +2,6 @@
 /* constant navigation menu on top of page */
 .navbar {
     display: flex;
-<<<<<<< HEAD
     justify-content: center;
     background-color: #d726e0;
     border: solid #a111a8;
@@ -11,11 +10,6 @@
 
 head {
     text-align: center;
-=======
-    justify-content: space-between;
-    border: #03c2fc;
-    padding: 10px;
->>>>>>> origin/main
 }
 
 .navbar-nav {
@@ -29,7 +23,6 @@ head {
 }
 /* constant background settings */
 body {
-<<<<<<< HEAD
     background-color: #b49cb5;
     font-family: Zapf Chancery, cursive;
 }
@@ -41,21 +34,13 @@ ul {
     border: solid black;
     padding: 10px;
     list-style-type: none;
-=======
-    background-color: #d8e2e3;
-    font-family: Zapf Chancery, cursive;
->>>>>>> origin/main
 }
 /* Constant headings for each webpage, including homepage */
 h1 {
     font-family: florence, cursive;
     font-size: 36px;
     font-weight:bold;
-<<<<<<< HEAD
     color:black;
-=======
-    color: solid black;
->>>>>>> origin/main
     text-align: center; 
     
 }
@@ -86,13 +71,7 @@ footer p {
     font-size: 13px;
     text-align: center;
     margin-top: 20px;
-<<<<<<< HEAD
     color:black;
-=======
-    color: black;
-    border: 5px solid black;
-    padding: 10px;
->>>>>>> origin/main
 }
 /* headers for the drink display */
 h2, h3, h4, h5 {
