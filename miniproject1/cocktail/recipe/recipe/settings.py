@@ -159,7 +159,6 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 mimetypes.add_type("text/css", ".css", True)
 
 # Media files
-MEDIA_URL = '/cocktail/recipe/cocktail_book/'
-MEDIA_URL = '/cocktail_book/media/'
+MEDIA_URL = '/cocktail_book/'
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_ROOT = BASE_DIR / 'cocktail_book' / 'media' / 'img'
+MEDIA_ROOT = BASE_DIR / 'cocktail_book' 

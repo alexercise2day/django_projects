@@ -1,6 +1,7 @@
 from django.urls import path
 from . import views
-
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('cocktail_book/', views.base, name='cocktail_book'),
@@ -15,4 +16,4 @@ urlpatterns = [
     path('tequila/tequila_display/<int:id>', views.tequila_display, name="tequila_display"),
     path('whiskey/', views.whiskey_all, name="whiskey_all"),
     path('whiskey/whiskey_display/<int:id>', views.whiskey_display, name="whiskey_display"),
-] 
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
