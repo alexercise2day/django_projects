@@ -5,7 +5,7 @@
     <h1>{{vodka_entry.name}}</h1>
     <div class="container">
         {% if vodka_entry.image %}
-            <img src="{{ vodka_entry.image.url }}" alt="Image">
+            <img src="{% static vodka_entry.image.url %}" alt="Image">
         {% endif %}
     </div>
     <h2>Ingredients</h2>
